@@ -1,1 +1,2 @@
-Made header section of the page.
+Made header section of the page. 4/4/19
+merged header and body, made a few changes to css and js files. i have also compressed video size from 177mb to 18mb. 6/4/19

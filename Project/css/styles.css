@@ -6,15 +6,58 @@
     src: url('../fonts/ocr-a\ regular.ttf')  format('truetype');
   }
 
+  @font-face {
+    font-family: "VCR";
+    src: url("../fonts/vcr_osd_mono.ttf") format('truetype');
+}
+
 *{
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: #040301;
+    color: white;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
-html,body{
-    background-color: #0a0a0a;
-    color: white;
-    width: 100%;
+h2,
+h3 {
+    font-family: 'VCR', sans-serif;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+a{
+    font-family: 'Ingra', sans-serif;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p,
+h4 {
+    line-height: 18px;
+    font-size: 14px;
+    font-family: 'Ingra', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 
 
@@ -37,11 +80,11 @@ html,body{
     transition: 0.5s;
 }
 
-#main-nav .container{
+#main-nav .menu-container{
     display: inline-block;
     cursor: pointer;
     float: right;
-    margin: 22px 15px 0 0;
+    margin: 28px 15px 0 0;
 }
 
 .bar1, .bar2, .bar3{
@@ -130,7 +173,7 @@ html,body{
     background-repeat: no-repeat;
     margin: 0 auto;
     max-width: 100%;
-    height: 800px;
+    height: 700px;
     background-color: #fff;
     overflow: hidden;
     position: relative;
@@ -200,13 +243,13 @@ html,body{
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1px;
-    font-family: Courier, monospace
+    font-family: Courier, monospace;
 }
 
 .intro-box p{
     text-align: left;
     font-size: 0.8em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ingra', sans-serif;
     max-width: 700px;
     margin: 0 auto 65px;
 }
@@ -233,13 +276,179 @@ html,body{
     color: white;
     border:none;
     font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ingra', sans-serif;
     cursor: pointer;
 }
 
 .intro-box .cta-btn:hover{
     background-color: #313030;
     transition: .25s;
+}
+
+
+/* Main content / body --------------------------------------------------*/
+
+/* main */
+/* intro */
+.textBlock {
+    margin-bottom: 35px;
+}
+
+.textBlock h2 {
+    font-size: 26px;
+}
+
+/* shortcut section */
+.shortcutBox {
+    margin-top: 35px;
+}
+
+.shortcutBox h3 {
+    margin-bottom: 0;
+    color: #2F9AB2;
+}
+
+.shortcutBox li {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.shortcut_top_line {
+    width: 190px;
+    margin: 10px 0 -10px 40px;
+    height: 1px;
+    background: #2F9AB2;
+}
+
+.shortcut_bottom_line {
+    width: 170px;
+    margin: -10px 0 10px 114px;
+    height: 1px;
+    background: #2F9AB2;
+}
+
+.shortcut_bottom_vertical_line {
+    width: 1px;
+    margin: -70px 0 0 284px;
+    height: 60px;
+    background: #2F9AB2;
+}
+
+/* study information box */
+.study_info {
+    margin-top: 35px;
+}
+
+.study_info h3 {
+    margin-bottom: 10px;
+    color: #2F9AB2;
+    text-align: center;
+}
+
+.study_box {
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 2px;
+    margin-bottom: 35px;
+}
+
+.study_box h4 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 25px;
+    color: #2F9AB2;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.study_box p,
+.study_box a {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+
+.study_line {
+    width: 200px;
+    margin: -15px 10px 5px 10px;
+    height: 1px;
+    background: #2F9AB2;
+}
+
+/* block quotes */
+.quote_box img {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 100px;
+    float: left;
+}
+
+.quote_text {
+    margin: 50px 0;
+    padding-left: 80px;
+}
+
+.quote_box span {
+    margin-bottom: 70px;
+    margin-left: -15px;
+    font-size: 3em;
+    color: #2F9AB2;
+    font-style: oblique;
+}
+
+.block_quote p {
+    color: #2F9AB2;
+    margin-top: -12px;
+    padding-left: 55px;
+}
+
+/* video and photos */
+.video {
+    width: 100%;
+}
+
+.photo {
+    width: 100%;
+}
+
+/* accordions */
+.accordion {
+    color: #2F9AB2;
+    text-align: center;
+}
+
+.accordion_box {
+    margin-top: 5px;
+    background: #fff;
+    border-radius: 2px;
+    border: solid 3px #eee;
+}
+
+.last_accordion {
+    margin-bottom: 55px;
+}
+
+/* news */
+.news h3 {
+    margin-bottom: 5px;
+}
+
+.news_element h4 {
+    margin: 0;
+}
+
+.news_element p {
+    margin-top: 5px;
+}
+
+.news_element a {
+    color: #fff;
+}
+
+.news_element img {
+    margin-top: 10px;
 }
 
 
@@ -283,6 +492,20 @@ html,body{
         text-align: center;
     }
 
+    /* You can put tablet styling here ------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -298,7 +521,7 @@ html,body{
     
     /*---Navigation----*/
 
-    #main-nav .container{
+    #main-nav .menu-container{
         display: none;
     }
 
@@ -342,7 +565,7 @@ html,body{
     }
 
     #dropdown ul li{
-        padding: 10px 0;
+        padding: 0;
         margin: 0 10px;
         width: auto;
         display:inline-block;
@@ -351,7 +574,24 @@ html,body{
 
     #dropdown ul li a{
         background-color: transparent;
+        margin: 0;
     }
+
+
+    /* You can put desktop styling here ------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

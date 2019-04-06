@@ -150,7 +150,7 @@ function toggleNav (x) {
             
                 window.onscroll = function(){
                     if(window.pageYOffset > 1){
-                        document.getElementById("main-nav").style.background = "#0a0a0a";
+                        document.getElementById("main-nav").style.background = "#FF2F02";
                     }
                     else{
                         document.getElementById("main-nav").style.background = "transparent";
