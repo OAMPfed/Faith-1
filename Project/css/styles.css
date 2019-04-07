@@ -452,6 +452,133 @@ li {
 }
 
 
+/*!!!!! FOOTER MOBILE !!!!!*/
+/*TO DO: Change H3 font to Bebas Neue*/
+
+.footer{
+  background-color: #F4F4F4;
+  width: 100%;
+  max-width: 676px;
+  border-top: 5px solid #278195;
+  padding: 0px 2% 0px 2%;
+
+}
+.footer a{
+  color: black;
+  font-size: 20px;
+}
+.footer h3{
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+    color: black;
+}
+.footer p{
+    color: black;
+}
+
+.border{
+  border-top: 2px solid #278195;
+  width: 100%;
+  margin: 10px auto 10px auto;
+}
+
+.footer-about{
+  margin: 15px 0px 10px 0px;
+}
+.footer-about p{
+  padding: 5px 0px 10px 0px;
+  font-size: 16px;
+}
+.footer-about ul{
+  list-style-type: none;
+}
+.footer-about ul li{
+  padding: 5px 0px 5px 0px
+}
+.footer-about ul li a{
+  text-decoration: none;
+}
+
+.footer-studies{
+  display: flex;
+  flex-direction: column;
+}
+.footer-studies ul li{
+  list-style-type: none;
+  padding: 5px 0px 0px 0px;
+  font-weight: 600;
+}
+.footer-studies ul li:last-child{
+  padding: 5px 0px 5px 0px;
+}
+.footer-studies ul li a{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-contact{
+
+}
+.footer-contact h3{
+    color: black;
+}
+.footer-contact ul li{
+    color: black;
+}
+.footer-contact ul li{
+  display: flex; /*This aligns icon and text*/
+  list-style-type: none;
+  padding: 5px 0px 0px 0px;
+}
+.footer-contact ul li:last-child{
+  padding: 5px 0px 5px 0px;
+}
+.footer-contact ul li i{
+  padding: 0px 5px 0px 0px;
+  font-size: 20px;
+}
+
+.footer-news{
+  display: flex;
+  flex-direction: column;
+  padding: 35px 0px 20px 0px;
+    color: black;
+}
+.footer-news input{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  border: solid 1px black;
+  border-radius: 5px;
+  height: 40px;
+  width: 320px;
+  margin: 30px auto 10px auto;
+}
+.footer-news button{
+  background-color: #278195;
+  border: solid 1px black;
+  border-radius: 5px;
+  height: 40px;
+  width: 320px;
+  margin: 5px auto 20px auto;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.footer-copy{
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 20px 0px;
+}
+.footer-copy p{
+    color: gray;
+}
+
+/*!!!!! FOOTER MOBILE END !!!!!*/
+
 
 /* Media query for tablet ------------------------------------------------*/
 
@@ -505,7 +632,30 @@ li {
 
 
 
+    /*!!!!!!!!!! FOOTER TABLET START !!!!!!!!!!*/
+    .footer{
+        background-color: #F4F4F4;
+        width: 100%;
+        max-width: 1025px;
+      }
+    .footer-studies-links{
+        display: flex;  
+        flex-direction: row;
+      }
+    .footer-contact{
+        display: flex;
+        justify-content: center;
+      }
+    .footer-news h3{
+        margin: 0px auto 0px auto;
+      }
+    .footer-news p{
+        width: 70%;
+        margin: 0px auto 0px auto;
+      }
 
+
+    /*!!!!!!!!!! FOOTER TABLET END !!!!!!!!!!*/
 }
 
 
@@ -591,7 +741,49 @@ li {
 
 
 
-
+    /*!!!!!!!!!!FOOTER DESKTOP START!!!!!!!!!!*/
+    .footer{
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: fr;
+    width: 100%;
+    max-width: 1400px;
+    padding: 20px 0px 0px 0px;
+  }
+  
+  .footer-studies{
+    grid-row: 1;
+    grid-column: 2/7;
+  }
+  .border1{
+    grid-row: 2;
+    grid-column: 2/7;
+  }
+  .footer-about{
+    grid-row:3;
+    grid-column: 2/5;
+  }
+  .footer-contact{
+    grid-row: 3;
+    grid-column: 5/7;
+    padding: 20px 0px 0px 0px;
+  }
+  .border2{
+    grid-row: 4;
+    grid-column: 2/7;
+  }
+  .border3{
+    display: none;
+  }
+  .footer-news{
+    grid-row: 1;
+    grid-column: 7/10;
+  }
+  .footer-copy{
+    grid-row: 2;
+    grid-column: 7/10;
+  }
+    /*!!!!!!!!!!FOOTER DESKTOP END!!!!!!!!!!*/
 
 }
 
