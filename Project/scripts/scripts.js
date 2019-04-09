@@ -73,7 +73,14 @@ const encryptionAnimation = (textToBeAnimated, targetElement, speed = 50) => {
 
             setTimeout(function (){
                 document.getElementById("imgban2").style.opacity = "1";
-                encryptionAnimation("Frontend-Utvikling", "banner1-header");
+
+                //checking if it's the english page or not. calling the english heading if it is.
+                if(location.pathname.includes("en-index")){
+                    encryptionAnimation("Frontend-Development", "banner1-header");
+                } else {
+                    encryptionAnimation("Frontend-Utvikling", "banner1-header");
+                }
+                
                 document.getElementById("banner2-header").innerHTML = " ";
             }, 1000);
 
@@ -94,7 +101,14 @@ const encryptionAnimation = (textToBeAnimated, targetElement, speed = 50) => {
 
             setTimeout(function (){
                 document.getElementById("imgban3").style.opacity = "1";
-                encryptionAnimation("Studiets Oppbygning", "banner2-header");
+
+                //checking if it's the english page or not. calling the english heading if it is.
+                if(location.pathname.includes("en-index")){
+                    encryptionAnimation("Programme objectives", "banner2-header");
+                } else {
+                    encryptionAnimation("Studiets Oppbygning", "banner2-header");
+                }
+        
                 document.getElementById("banner3-header").innerHTML = " ";
             }, 1000);
 
@@ -115,7 +129,14 @@ const encryptionAnimation = (textToBeAnimated, targetElement, speed = 50) => {
 
             setTimeout(function (){
                 document.getElementById("imgban1").style.opacity = "1";
-                encryptionAnimation("Jobbmuligheter", "banner3-header");
+
+                //checking if it's the english page or not. calling the english heading if it is.
+                if(location.pathname.includes("en-index")){
+                    encryptionAnimation("Job opportunities", "banner3-header");
+                } else {
+                    encryptionAnimation("Jobbmuligheter", "banner3-header");
+                }
+
                 document.getElementById("banner3-header").innerHTML = " ";
             }, 1000);
 
@@ -134,7 +155,7 @@ const encryptionAnimation = (textToBeAnimated, targetElement, speed = 50) => {
     
  // Navigation  toggle dropdown and changing background color on scroll.
 function toggleNav (x) {
-                var menu = document.getElementById(x), maxH="100vh";
+                let menu = document.getElementById(x), maxH="100vh";
                 if (menu.style.height == maxH) {
                     menu.style.height = "0vh";
                 }
@@ -143,7 +164,7 @@ function toggleNav (x) {
                 } 
             }
             
-            function myFunction(x) {
+            function changeMenuIcon(x) {
                     x.classList.toggle("change");
             }
             
@@ -157,5 +178,51 @@ function toggleNav (x) {
                     }
                     
                 }
-                    
+
+// toggle accordions.
+
+const accordionOne = document.getElementById("accordion-one");
+const accordionTwo = document.getElementById("accordion-two");
+const topicList = document.getElementById("topic-list");
+const learnList = document.getElementById("learn-list");
+
+accordionOne.addEventListener("click", () => {
+    if(topicList.style.display === "none"){
+        topicList.style.display = "block";
+    } else {
+        topicList.style.display = "none";
+    }
+});
+
+accordionTwo.addEventListener("click", () => {
+    if(learnList.style.display === "none"){
+        learnList.style.display = "block";
+    } else {
+        learnList.style.display = "none";
+    }
+});
+
+// Google maps location toggle.
+
+const goToStavanger = () =>{
+    let location = "Noroff%20Stavanger";
+    document.getElementById("gmap_canvas").src = "https://maps.google.com/maps?q="+ location +"&t=&ie=UTF8&iwloc=&output=embed"
+}
+
+const goToBergen = () =>{
+    let location = "Noroff%20Bergen";
+    document.getElementById("gmap_canvas").src = "https://maps.google.com/maps?q="+ location +"&t=&ie=UTF8&iwloc=&output=embed"
+}
+
+const goToKristiansand = () =>{
+    let location = "Noroff%20Kristiansand";
+    document.getElementById("gmap_canvas").src = "https://maps.google.com/maps?q="+ location +"&t=&ie=UTF8&iwloc=&output=embed"
+}
+
+const goToOslo = () =>{
+    let location = "Noroff%20Oslo";
+    document.getElementById("gmap_canvas").src = "https://maps.google.com/maps?q="+ location +"&t=&ie=UTF8&iwloc=&output=embed"
+}
+             
    
+//check if the english page is open

@@ -6,9 +6,14 @@
     src: url('../fonts/ocr-a\ regular.ttf')  format('truetype');
   }
 
-  @font-face {
+@font-face {
     font-family: "VCR";
     src: url("../fonts/vcr_osd_mono.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Bebasneue";
+    src: url("../fonts/bebasneue.ttf") format('truetype');
 }
 
 *{
@@ -67,6 +72,7 @@ li {
     width: 100px;
     height: auto;
     margin: 15px 0 0 15px;
+    cursor: pointer;
 }
 
 
@@ -160,6 +166,10 @@ li {
 
 .flag{
     width: 50px;
+}
+
+.flag:hover{
+    transform: scale(1.05);
 }
 
 
@@ -288,8 +298,17 @@ li {
 
 /* Main content / body --------------------------------------------------*/
 
-/* main */
-/* intro */
+/* Anchors */
+a.anchor {
+    display: block;
+    position: relative;
+    top: 50px;
+    visibility: hidden;
+    box-sizing: content-box;
+}
+
+/* main--------------------- */
+/* intro-------------------- */
 .textBlock {
     margin-bottom: 35px;
 }
@@ -298,7 +317,7 @@ li {
     font-size: 26px;
 }
 
-/* shortcut section */
+/* shortcut section--------- */
 .shortcutBox {
     margin-top: 35px;
 }
@@ -311,6 +330,22 @@ li {
 .shortcutBox li {
     font-size: 14px;
     line-height: 20px;
+}
+
+.shortcutBox li a{
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.shortcutBox li a:hover {
+    color: #278195;
+    transition: .25s;
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    -o-transition: .25s;
 }
 
 .shortcut_top_line {
@@ -334,7 +369,7 @@ li {
     background: #2F9AB2;
 }
 
-/* study information box */
+/* study information box---------- */
 .study_info {
     margin-top: 35px;
 }
@@ -377,7 +412,7 @@ li {
     background: #2F9AB2;
 }
 
-/* block quotes */
+/* block quotes--------------- */
 .quote_box img {
     max-width: 100%;
     margin-top: 10px;
@@ -404,7 +439,7 @@ li {
     padding-left: 55px;
 }
 
-/* video and photos */
+/* video and photos--------------- */
 .video {
     width: 100%;
 }
@@ -413,7 +448,7 @@ li {
     width: 100%;
 }
 
-/* accordions */
+/* accordions---------------------- */
 .accordion {
     color: #2F9AB2;
     text-align: center;
@@ -424,6 +459,49 @@ li {
     background: #fff;
     border-radius: 2px;
     border: solid 3px #eee;
+}
+
+.accordion_box:hover {
+    background-color: #FF2F02;
+    transition: .25s;
+    border: solid 3px #FF2F02;
+    transition: .25s;
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    -o-transition: .25s;
+    cursor: pointer;
+}
+
+#learn-list{
+    display: none;
+    width: 90%;
+    margin-left: 5%;
+}
+
+#topic-list{
+    display: none;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.accordion-list{
+    width: 100%;
+}
+
+.accordion-text{
+    font-size: 1.2em;
+    text-align: left;
+    
+}
+
+.accordion-list-item{
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 0.9em;
+    font-weight: 300;
+    list-style-type: disc;
+    font-family: 'Ingra', sans-serif;
 }
 
 .last_accordion {
@@ -447,19 +525,68 @@ li {
     color: #fff;
 }
 
-.news_element img {
-    margin-top: 10px;
+.news_element a:hover{
+    color: #6f6f6f;
+    transition: .25s;
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    -o-transition: .25s;
 }
 
+.news_element img {
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+.news_element img:hover{
+    opacity: 1;
+    transition: .25s;
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    -o-transition: .25s;
+}
+
+.mapOuter{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.gmap{
+    width: 100%;
+}
+
+.map-links{
+    margin: 20px 0;
+    text-align: left;
+}
+
+.map-links button{
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    background-color: #2F9AB2;
+    border-radius: 50px;
+    border: none;
+}
+
+.map-links button:hover{
+    background-color: #6f6f6f;
+    transition: .25s;
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    -o-transition: .25s;
+    cursor: pointer;
+}
 
 /*!!!!! FOOTER MOBILE !!!!!*/
-/*TO DO: Change H3 font to Bebas Neue*/
 
 .footer{
   background-color: #F4F4F4;
   width: 100%;
   max-width: 676px;
   border-top: 5px solid #278195;
+  margin-top: 50px;
   padding: 0px 2% 0px 2%;
 
 }
@@ -469,8 +596,9 @@ li {
 }
 .footer h3{
   font-size: 25px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bebasneue', sans-serif;
   font-weight: 600;
+  letter-spacing: 1px;
     color: black;
 }
 .footer p{
@@ -537,6 +665,10 @@ li {
 .footer-contact ul li i{
   padding: 0px 5px 0px 0px;
   font-size: 20px;
+}
+
+#newsletter-form{
+    margin: 0 auto;
 }
 
 .footer-news{
@@ -622,15 +754,51 @@ li {
     /* You can put tablet styling here ------*/
 
 
+    .container {
+        display: grid;
+        grid-template-columns: repeat(20, 5%);
+        grid-template-rows: fr;
+        width: 100%;
+        max-width: 1400px;
+        padding: 20px 0px 0px 0px;
+    }
 
+    .shortcutBox {
+        grid-row: 1;
+        grid-column: 3/7;
+    }
 
+    .study_info {
+        grid-row: 2/10;
+        grid-column: 2/8;
+    }
 
+    .quote_box {
+        grid-column: 9/14;
+        grid-row: 3;
+    }
 
+    .quote2 {
+        grid-row: 3;
+        grid-column: 14/19;
+    }
 
+    .video {
+        grid-column: 9/19;
+        grid-row: 5/8;
+        width: 100%;
+    }
 
+    .first_accordion, .last_accordion, .news, .photo, .textBlock{
+        grid-column: 9/19; 
+    }
 
-
-
+    .mapOuter{
+        width: 100%;
+        margin-left: 0;
+        grid-column: 9/19;
+    }
+    
 
     /*!!!!!!!!!! FOOTER TABLET START !!!!!!!!!!*/
     .footer{
@@ -642,6 +810,11 @@ li {
         display: flex;  
         flex-direction: row;
       }
+    
+    .footer-studies2{
+        padding-left: 10px;
+    }
+
     .footer-contact{
         display: flex;
         justify-content: center;
@@ -685,8 +858,9 @@ li {
     }
 
     .flag{
-        width: 20px;
-        margin: 0 10px;
+        width: 25px;
+        margin: -10px 10px 0;
+        border: 2px solid white;
     }
 
    /*--------Dropdown Nav--------*/
@@ -728,7 +902,51 @@ li {
     }
 
 
-    /* You can put desktop styling here ------*/
+    /* You can put body desktop styling here ------*/
+
+    .accordion-grid-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(20, 5%);
+        grid-template-rows: fr;
+        width: 100%;
+        max-width: 1400px;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .shortcutBox {
+        grid-row: 1;
+        grid-column: 3/7;
+    }
+
+    .study_info {
+        grid-row: 2/10;
+        grid-column: 2/8;
+    }
+
+    .quote_box {
+        grid-column: 9/14;
+        grid-row: 3;
+    }
+
+    .quote2 {
+        grid-row: 3;
+        grid-column: 14/19;
+    }
+
+    .video {
+        grid-column: 9/19;
+        grid-row: 5/8;
+        width: 100%;
+    }
+
+    .first_accordion, .last_accordion, .news, .photo, .textBlock {
+        grid-column: 9/19; 
+    }
 
 
 
@@ -748,6 +966,7 @@ li {
     grid-template-rows: fr;
     width: 100%;
     max-width: 1400px;
+    margin: 50px auto 0;
     padding: 20px 0px 0px 0px;
   }
   
