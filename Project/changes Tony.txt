@@ -1,2 +1,11 @@
-Made header section of the page. 4/4/19
-merged header and body, made a few changes to css and js files. i have also compressed video size from 177mb to 18mb. 6/4/19
+- Made header section of the page. html, css and js 
+  4/4/19
+
+- Merged header and body, made a few changes to css and js files. i have also compressed video size from 177mb to 18mb. 
+  6/4/19
+
+
+- Ferdigstillet JS filen og tilrettelagt for en engelsk side. 
+  ordnet alt av funksjonalitet som interne linker, google maps, koblet form i footer opp mot mailchimp, lagt til regex, tweaket CSS, HTML and JS filer. 
+  Laget og fullført den engelske versjonen.
+  9/4/19

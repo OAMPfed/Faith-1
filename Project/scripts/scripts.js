@@ -215,7 +215,7 @@ const goToBergen = () =>{
 }
 
 const goToKristiansand = () =>{
-    let location = "Noroff%20Kristiansand";
+    let location = "Noroff%20Kristiansand%20Elvegata%20Kristiansand";
     document.getElementById("gmap_canvas").src = "https://maps.google.com/maps?q="+ location +"&t=&ie=UTF8&iwloc=&output=embed"
 }
 
