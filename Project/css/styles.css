@@ -46,7 +46,7 @@ h3 {
 p,
 h4 {
     line-height: 18px;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Ingra', sans-serif;
 }
 
@@ -546,12 +546,17 @@ a.anchor {
     -o-transition: .25s;
 }
 
+iframe {
+    border: none;
+}
+
 .mapOuter{
     width: 90%;
     margin-left: 5%;
 }
 
 .gmap{
+    overflow: hidden;
     width: 100%;
 }
 
@@ -584,7 +589,6 @@ a.anchor {
 .footer{
   background-color: #F4F4F4;
   width: 100%;
-  max-width: 676px;
   border-top: 5px solid #278195;
   margin-top: 50px;
   padding: 0px 2% 0px 2%;
@@ -592,7 +596,6 @@ a.anchor {
 }
 .footer a{
   color: black;
-  font-size: 20px;
 }
 .footer h3{
   font-size: 25px;
@@ -642,11 +645,10 @@ a.anchor {
 }
 .footer-studies ul li a{
   text-decoration: none;
-  font-size: 20px;
 }
 
-.footer-contact{
-
+.footer-contact a{
+    font-family: 'Courier New', Courier, monospace;
 }
 .footer-contact h3{
     color: black;
@@ -757,7 +759,6 @@ a.anchor {
     .container {
         display: grid;
         grid-template-columns: repeat(20, 5%);
-        grid-template-rows: fr;
         width: 100%;
         max-width: 1400px;
         padding: 20px 0px 0px 0px;
@@ -801,8 +802,11 @@ a.anchor {
     
 
     /*!!!!!!!!!! FOOTER TABLET START !!!!!!!!!!*/
-    .footer{
+    footer {
         background-color: #F4F4F4;
+    }
+
+    .footer{
         width: 100%;
         max-width: 1025px;
       }
@@ -826,7 +830,6 @@ a.anchor {
         width: 70%;
         margin: 0px auto 0px auto;
       }
-
 
     /*!!!!!!!!!! FOOTER TABLET END !!!!!!!!!!*/
 }
@@ -912,7 +915,6 @@ a.anchor {
     .container {
         display: grid;
         grid-template-columns: repeat(20, 5%);
-        grid-template-rows: fr;
         width: 100%;
         max-width: 1400px;
         padding: 20px 0px 0px 0px;
@@ -951,19 +953,10 @@ a.anchor {
 
 
 
-
-
-
-
-
-
-
-
     /*!!!!!!!!!!FOOTER DESKTOP START!!!!!!!!!!*/
     .footer{
     display: grid;
     grid-template-columns: repeat(10, 10%);
-    grid-template-rows: fr;
     width: 100%;
     max-width: 1400px;
     margin: 50px auto 0;

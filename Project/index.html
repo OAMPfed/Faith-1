@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    
+
     <title>Noroff | Frontend-Utvikling</title>
 </head>
+
 <body>
 
 
-    <!--------------------------------------Header area------------------------------------>
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Header area!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
     <nav id="dropdown">
         <div id="dropdown-inner-container">
             <ul>
@@ -24,7 +27,8 @@
                 <li><a href="#">Kontakt</a></li>
                 <li><a href="#">Mine Sider</a></li>
                 <li><a href="#">Søk Studieplass</a></li>
-                <li><a href="index.html"><img class="flag" src="img/Norwegian-flag.png" alt="Language Norwegian"><a href="en-index.html"><img class="flag" src="img/UK-flag.png" alt="Language Norwegian"></a></li>
+                <li><a href="index.html"><img class="flag" src="img/Norwegian-flag.png" alt="Language Norwegian"></a><a
+                        href="en-index.html"><img class="flag" src="img/UK-flag.png" alt="Language English"></a></li>
             </ul>
         </div>
     </nav>
@@ -32,7 +36,7 @@
     <header id="main-header">
         <div id="main-nav">
             <div id="header-container">
-                <img src="img/noroff-logo.png" alt="Noroff Logo" id="logo"/>
+                <img src="img/noroff-logo.png" alt="Noroff Logo" id="logo" />
                 <div class="menu-container" onclick="toggleNav('dropdown')">
                     <div class="clickdiv" onclick="changeMenuIcon(this)">
                         <div class="bar1"></div>
@@ -50,46 +54,54 @@
             <div class="prev-btn ban-btn" id="prev-btn"></div>
             <div class="imgban" id="imgban3">
                 <div class="imgban-box">
-                    <h2 id="banner3-header" class="banner-header"> </h2>
+                    <div id="banner3-header" class="banner-header"></div>
                     <div class="icon-box">
-                        <i class="fas fa-user-graduate"></i></i><span>120 Studiepoeng</span> <br class="line-break"/>
-                        <i class="far fa-clock"></i><span>2 år</span><br class="line-break"/>
-                        <i class="fas fa-map-marker-alt"></i><span>Oslo, Bergen</span><br class="line-break"/>
-                        <i class="fas fa-laptop-code"></i><span>Nettstudier</span><br class="line-break"/>
+                        <i class="fas fa-user-graduate"></i><span>120 Studiepoeng</span> <br class="line-break" />
+                        <i class="far fa-clock"></i><span>2 år</span><br class="line-break" />
+                        <i class="fas fa-map-marker-alt"></i><span>Oslo, Bergen</span><br class="line-break" />
+                        <i class="fas fa-laptop-code"></i><span>Nettstudier</span><br class="line-break" />
                     </div>
                     <div class="intro-box">
-                        <p>Det finnes et stort utvalg av jobbutlysninger relatert til faget i ulike områder av arbeidslivet. Etter studiet vil du være i stand til å utføre arbeid i bl. a. designbyråer, IT-firmaer, programvarehus, mediehus eller kommunikasjonsbedrifter. <a href="#jobbmuligheter">Les mer &#8681</a></p>
-                        <a href="#"><button class="cta-btn">Søk Studieplass</button></a>
+                        <p>Det finnes et stort utvalg av jobbutlysninger relatert til faget i ulike områder av
+                            arbeidslivet. Etter studiet vil du være i stand til å utføre arbeid i bl. a. designbyråer,
+                            IT-firmaer, programvarehus, mediehus eller kommunikasjonsbedrifter. <a
+                                href="#jobbmuligheter">Les mer &#8681;</a></p>
+                        <button class="cta-btn">Søk Studieplass</button>
                     </div>
                 </div>
             </div>
             <div class="imgban" id="imgban2">
                 <div class="imgban-box">
-                    <h2 id="banner2-header" class="banner-header"> </h2>
+                    <div id="banner2-header" class="banner-header"></div>
                     <div class="icon-box">
-                        <i class="fas fa-user-graduate"></i></i><span>120 Studiepoeng</span><br class="line-break"/>
-                        <i class="far fa-clock"></i><span>2 år</span><br class="line-break"/>
-                        <i class="fas fa-map-marker-alt"></i><span>Oslo, Bergen</span><br class="line-break"/>
-                        <i class="fas fa-laptop-code"></i><span>Nettstudier</span><br class="line-break"/>
+                        <i class="fas fa-user-graduate"></i><span>120 Studiepoeng</span><br class="line-break" />
+                        <i class="far fa-clock"></i><span>2 år</span><br class="line-break" />
+                        <i class="fas fa-map-marker-alt"></i><span>Oslo, Bergen</span><br class="line-break" />
+                        <i class="fas fa-laptop-code"></i><span>Nettstudier</span><br class="line-break" />
                     </div>
                     <div class="intro-box">
-                        <p>Studiet har fokus på utvikling av produkter i grensesnittet mellom kundeopplevelse og systemutvikling. Produktene som utvikles i løpet av studiet skal både ha estetisk verdi, god funksjonalitet og riktig teknisk utførelse. <a href="#studie">Les mer &#8681</a></studiene></p>
-                        <a href="#"><button class="cta-btn">Søk Studieplass</button></a>
+                        <p>Studiet har fokus på utvikling av produkter i grensesnittet mellom kundeopplevelse og
+                            systemutvikling. Produktene som utvikles i løpet av studiet skal både ha estetisk verdi, god
+                            funksjonalitet og riktig teknisk utførelse. <a href="#studie">Les mer &#8681;</a>
+                        </p>
+                        <button class="cta-btn">Søk Studieplass</button>
                     </div>
                 </div>
             </div>
             <div class="imgban" id="imgban1">
                 <div class="imgban-box">
-                    <h2 id="banner1-header" class="banner-header"> </h2>
+                    <div id="banner1-header" class="banner-header"></div>
                     <div class="icon-box">
-                        <i class="fas fa-user-graduate"></i><span>120 Studiepoeng</span><br class="line-break"/>
-                        <i class="far fa-clock"></i><span>2 år</span><br class="line-break"/>
-                        <i class="fas fa-map-marker-alt"></i><span>Oslo, Bergen</span><br class="line-break"/>
-                        <i class="fas fa-laptop-code"></i><span>Nettstudier</span><br class="line-break"/>
+                        <i class="fas fa-user-graduate"></i><span>120 Studiepoeng</span><br class="line-break" />
+                        <i class="far fa-clock"></i><span>2 år</span><br class="line-break" />
+                        <i class="fas fa-map-marker-alt"></i><span>Oslo, Bergen</span><br class="line-break" />
+                        <i class="fas fa-laptop-code"></i><span>Nettstudier</span><br class="line-break" />
                     </div>
                     <div class="intro-box">
-                        <p>Frontend-utvikling er teknologiutdanningen hvor visuell utforming møter koding, web- og UX-design. Det store behovet for frontend-utviklere nærmest garanterer jobb etter studiene. <a href="#frontend">Les mer &#8681</a></p>
-                        <a href="#"><button class="cta-btn">Søk Studieplass</button></a>
+                        <p>Frontend-utvikling er teknologiutdanningen hvor visuell utforming møter koding, web- og
+                            UX-design. Det store behovet for frontend-utviklere nærmest garanterer jobb etter studiene.
+                            <a href="#frontend">Les mer &#8681;</a></p>
+                        <button class="cta-btn">Søk Studieplass</button>
                     </div>
                 </div>
             </div>
@@ -97,7 +109,7 @@
         </div>
     </div>
 
-    <!--------------------------------------Header area------------------------------------>
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Header area!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
     <main>
         <div class="container">
@@ -118,7 +130,7 @@
                 <h3>SNARVEIER</h3>
                 <div class="shortcut_top_line"></div>
                 <ul>
-                    <li><a href="#web-og-mobil" target="_bottom">– WEB & MOBILENHETER</a></li>
+                    <li><a href="#web-og-mobil">– WEB & MOBILENHETER</a></li>
                     <li><a href="#god-utviklerpraksis">– UTVIKLER PRAKSIS</a></li>
                     <li><a href="#koding-og-prog">– KODING & PROGRAMMERINGSSPRÅK</a></li>
                     <li><a href="#studie">– STUDIETS OPPBYGGING</a></li>
@@ -187,7 +199,7 @@
                 </div>
             </div>
 
-<a class="anchor" id="web-og-mobil"></a>
+            <a class="anchor" id="web-og-mobil"></a>
 
             <div class="textBlock">
                 <h3>WEB- OG MOBILE ENHETER</h3>
@@ -200,7 +212,7 @@
             </div>
 
             <div class="quote_box">
-                <img src="img/person1.jpeg" alt="Female Student" width="70px">
+                <img src="img/person1.jpeg" alt="Female Student" width="70">
                 <div class="quote_text">
                     <p><span>"</span>I løpet av det første semesteret har vi allerede designet og kodet flere nettsider.
                         Studiet er utfordrende, og det er gøy!</p>
@@ -210,7 +222,7 @@
                 </div>
             </div>
 
-<a class="anchor" id="god-utviklerpraksis"></a>
+            <a class="anchor" id="god-utviklerpraksis"></a>
 
             <div class="textBlock">
                 <h3>GOD UTVIKLERPRAKSIS</h3>
@@ -222,14 +234,14 @@
                     innholdsutviklere. Videre vil de kunne samarbeide med eksterne fagmiljøer innen sosiale medier,
                     universell utforming, søkemotoroptimalisering og IT-sikkerhet.</p>
             </div>
-        
 
-        <video class="video" controls>
-            <source src="videos/frontend-video.mp4" type="video/mp4">
-        </video>
 
-<a class="anchor" id="koding-og-prog"></a>
-        
+            <video class="video" controls>
+                <source src="videos/frontend-video.mp4" type="video/mp4">
+            </video>
+
+            <a class="anchor" id="koding-og-prog"></a>
+
             <div class="textBlock">
                 <h3>LÆR KODING OG
                     PROGRAMMERINGSSPRÅK</h3>
@@ -247,14 +259,14 @@
                     CSS-rammeverket Susy. Mot slutten av studiet blir studentene introdusert for AJAX for å kunne
                     utvikle mer avanserte webløsninger. </p>
             </div>
-        
 
-        <div class="photo">
-            <img src="img/studenter-bergen.jpg" alt="Studenter Bergen" width="100%">
-        </div>
 
-<a class="anchor" id="studie"></a>
-        
+            <div class="photo">
+                <img src="img/studenter-bergen.jpg" alt="Studenter Bergen" style=" width:100%;">
+            </div>
+
+            <a class="anchor" id="studie"></a>
+
             <div class="textBlock">
                 <h3>STUDIETS OPPBYGGING</h3>
                 <p>Studiet har fokus på utvikling av produkter i grensesnittet mellom kundeopplevelse og
@@ -315,40 +327,75 @@
                 </div>
                 <div id="learn-list" style="display: none">
                     <ul class="accordion-list">
-                        <li class="accordion-list-item">kunnskap om begreper og bransjeverktøy som anvendes innen webutvikling, produksjon og implementering av interaktive konsepter, -løsninger og -produkter</li>
-                        <li class="accordion-list-item">kunnskap om språk, begreper, teknikker og bransjeverktøy som anvendes innen webutvikling og ved utvikling av interaktive konsepter, -løsninger og -produkter</li>
-                        <li class="accordion-list-item">kunnskap om de mest aktuelle prosessmetoder, stilsettverktøy og programmeringsspråk for kvalitetssikring, effektivisering og optimalisering av arbeidsprosessen</li>
-                        <li class="accordion-list-item">kunnskap om de mest aktuelle verktøy som anvendes for testing av websider, interaktive løsninger og produkter på tvers av plattformer og operativsystemer</li>
-                        <li class="accordion-list-item">kunnskap om grunnleggende designprinsipper og identitetselementer som anvendes i utvikling av digitale produkter</li>
-                        <li class="accordion-list-item">kunnskap om hvordan nettsider og interaktive produkter er bygd opp logisk og visuelt</li>
-                        <li class="accordion-list-item">kunnskap om hvordan nettsideteknologi kommuniserer med bakenforliggende systemer</li>
-                        <li class="accordion-list-item">vurdere nettsider, interaktive løsninger, webtjenester og webinnhold i forhold til regelverk og retningslinjer for universell utforming av IKT-løsninger og webstandarder</li>
-                        <li class="accordion-list-item">bransjekunnskap om hvordan interaktive konsepter og løsninger skal utarbeides, presenteres og leveres både internt og eksternt og kjennskap til metoder for entreprenørskap innen fagfeltet</li>
-                        <li class="accordion-list-item">oppdatere sin faglige kunnskap gjennom faglitteratur, faglige foredrag, nettbaserte portaler og utviklermiljøer både lokalt og internasjonalt</li>
+                        <li class="accordion-list-item">kunnskap om begreper og bransjeverktøy som anvendes innen
+                            webutvikling, produksjon og implementering av interaktive konsepter, -løsninger og
+                            -produkter</li>
+                        <li class="accordion-list-item">kunnskap om språk, begreper, teknikker og bransjeverktøy som
+                            anvendes innen webutvikling og ved utvikling av interaktive konsepter, -løsninger og
+                            -produkter</li>
+                        <li class="accordion-list-item">kunnskap om de mest aktuelle prosessmetoder, stilsettverktøy og
+                            programmeringsspråk for kvalitetssikring, effektivisering og optimalisering av
+                            arbeidsprosessen</li>
+                        <li class="accordion-list-item">kunnskap om de mest aktuelle verktøy som anvendes for testing av
+                            websider, interaktive løsninger og produkter på tvers av plattformer og operativsystemer
+                        </li>
+                        <li class="accordion-list-item">kunnskap om grunnleggende designprinsipper og
+                            identitetselementer som anvendes i utvikling av digitale produkter</li>
+                        <li class="accordion-list-item">kunnskap om hvordan nettsider og interaktive produkter er bygd
+                            opp logisk og visuelt</li>
+                        <li class="accordion-list-item">kunnskap om hvordan nettsideteknologi kommuniserer med
+                            bakenforliggende systemer</li>
+                        <li class="accordion-list-item">vurdere nettsider, interaktive løsninger, webtjenester og
+                            webinnhold i forhold til regelverk og retningslinjer for universell utforming av
+                            IKT-løsninger og webstandarder</li>
+                        <li class="accordion-list-item">bransjekunnskap om hvordan interaktive konsepter og løsninger
+                            skal utarbeides, presenteres og leveres både internt og eksternt og kjennskap til metoder
+                            for entreprenørskap innen fagfeltet</li>
+                        <li class="accordion-list-item">oppdatere sin faglige kunnskap gjennom faglitteratur, faglige
+                            foredrag, nettbaserte portaler og utviklermiljøer både lokalt og internasjonalt</li>
                         <li class="accordion-list-item">kjenne til bransjens historie og internettets oppbygging</li>
-                        <li class="accordion-list-item">innsikt i egne utviklingsmuligheter og holder seg oppdatert på de nyeste trendene og nyutviklinger innen fagfeltet</li>
-                        <li class="accordion-list-item">gjøre rede for valg av verktøy, metoder og teknikker i planlegging, utvikling, utforming og testing av interaktive produkter og webløsninger</li>
-                        <li class="accordion-list-item">gjøre rede for bruk av regelverk og retningslinjer for universell utforming av IKT-løsninger og webstandarder</li>
-                        <li class="accordion-list-item">reflektere over egen utøvelse som Frontend-utvikler og justere denne under veiledning</li>
-                        <li class="accordion-list-item">reflektere over brukertilbakemeldinger eller generelle teknologiske utviklingstrender og justere egen yrkesutøvelse etter dette</li>
-                        <li class="accordion-list-item">finne informasjon og fagstoff relevant for en problemstilling relatert til front-end utvikling</li>
-                        <li class="accordion-list-item">gjennomføre en brukertest av nye eller eksisterende interaktive produkter eller tjenester og identifisere og dokumentere både visuelle og tekniske mangler</li>
-                        <li class="accordion-list-item">kartlegge utviklingsprosessen av interaktive produkter og tjenester som skal benyttes på forskjellige plattformer</li>
-                        <li class="accordion-list-item">gjøre rede for metoder for entreprenørskap relatert til fagfeltet</li>
-                        <li class="accordion-list-item">planlegge og gjennomføre oppdrag innen webdesign og utvikle interaktive produkter alene eller som deltager i gruppe</li>
-                        <li class="accordion-list-item">planlegge og gjennomføre Frontend oppdrag i tråd med etiske krav, retningslinjer for universell utforming, målgruppenes behov eller kundebrief</li>
-                        <li class="accordion-list-item">planlegge interaktive webløsninger både visuelt og teknisk og gjennomføre en interaktiv løsning fra ide til ferdig, fullt fungerende produkt</li>
-                        <li class="accordion-list-item">utføre brukervennlige interaktive løsninger etter utvalgte målgruppers behov</li>
-                        <li class="accordion-list-item">bygge relasjoner med grafisk designere, interaksjonsdesignere, programmerere, og innholdsutviklere og delta i diskusjoner om utvikling av tverrfaglig og fremtidsrettet praksis</li>
-                        <li class="accordion-list-item">fungere som medspiller og nøkkelperson i prosjekter som går på tvers av nærliggende fag og utføre entreprenørskap innen fagfeltet</li>
-                        <li class="accordion-list-item">bygge relasjoner med eksterne fagmiljøer innen sosiale medier, universell utforming, søkemotoroptimalisering og IT-sikkerhet</li>
-                        <li class="accordion-list-item">bidra til tydeliggjøring, effektivisering og kvalitetssikring i en bedrift både internt og ekstern gjennom god utviklerpraksis</li>
+                        <li class="accordion-list-item">innsikt i egne utviklingsmuligheter og holder seg oppdatert på
+                            de nyeste trendene og nyutviklinger innen fagfeltet</li>
+                        <li class="accordion-list-item">gjøre rede for valg av verktøy, metoder og teknikker i
+                            planlegging, utvikling, utforming og testing av interaktive produkter og webløsninger</li>
+                        <li class="accordion-list-item">gjøre rede for bruk av regelverk og retningslinjer for
+                            universell utforming av IKT-løsninger og webstandarder</li>
+                        <li class="accordion-list-item">reflektere over egen utøvelse som Frontend-utvikler og justere
+                            denne under veiledning</li>
+                        <li class="accordion-list-item">reflektere over brukertilbakemeldinger eller generelle
+                            teknologiske utviklingstrender og justere egen yrkesutøvelse etter dette</li>
+                        <li class="accordion-list-item">finne informasjon og fagstoff relevant for en problemstilling
+                            relatert til front-end utvikling</li>
+                        <li class="accordion-list-item">gjennomføre en brukertest av nye eller eksisterende interaktive
+                            produkter eller tjenester og identifisere og dokumentere både visuelle og tekniske mangler
+                        </li>
+                        <li class="accordion-list-item">kartlegge utviklingsprosessen av interaktive produkter og
+                            tjenester som skal benyttes på forskjellige plattformer</li>
+                        <li class="accordion-list-item">gjøre rede for metoder for entreprenørskap relatert til
+                            fagfeltet</li>
+                        <li class="accordion-list-item">planlegge og gjennomføre oppdrag innen webdesign og utvikle
+                            interaktive produkter alene eller som deltager i gruppe</li>
+                        <li class="accordion-list-item">planlegge og gjennomføre Frontend oppdrag i tråd med etiske
+                            krav, retningslinjer for universell utforming, målgruppenes behov eller kundebrief</li>
+                        <li class="accordion-list-item">planlegge interaktive webløsninger både visuelt og teknisk og
+                            gjennomføre en interaktiv løsning fra ide til ferdig, fullt fungerende produkt</li>
+                        <li class="accordion-list-item">utføre brukervennlige interaktive løsninger etter utvalgte
+                            målgruppers behov</li>
+                        <li class="accordion-list-item">bygge relasjoner med grafisk designere, interaksjonsdesignere,
+                            programmerere, og innholdsutviklere og delta i diskusjoner om utvikling av tverrfaglig og
+                            fremtidsrettet praksis</li>
+                        <li class="accordion-list-item">fungere som medspiller og nøkkelperson i prosjekter som går på
+                            tvers av nærliggende fag og utføre entreprenørskap innen fagfeltet</li>
+                        <li class="accordion-list-item">bygge relasjoner med eksterne fagmiljøer innen sosiale medier,
+                            universell utforming, søkemotoroptimalisering og IT-sikkerhet</li>
+                        <li class="accordion-list-item">bidra til tydeliggjøring, effektivisering og kvalitetssikring i
+                            en bedrift både internt og ekstern gjennom god utviklerpraksis</li>
                     </ul>
                 </div>
             </div>
 
             <div class="quote_box quote2">
-                <img src="img/person2.jpeg" alt="Male Student" width="70px">
+                <img src="img/person2.jpeg" alt="Male Student" width="70">
                 <div class="quote_text">
                     <p><span>"</span>Frontend-studiet på Noroff er veldig praktisk rettet. Du lærer å designe,
                         utvikle og implementere en webside helt fra scratch.</p>
@@ -358,7 +405,7 @@
                 </div>
             </div>
 
-<a class="anchor" id="jobbmuligheter"></a>
+            <a class="anchor" id="jobbmuligheter"></a>
 
             <div class="textBlock">
                 <h3>JOBBMULIGHETER</h3>
@@ -373,7 +420,7 @@
                     seg over relativt kort tid.</p>
             </div>
 
-<a class="anchor" id="videre-studier"></a>
+            <a class="anchor" id="videre-studier"></a>
 
             <div class="textBlock">
                 <h3>VIDERE STUDIER</h3>
@@ -382,12 +429,12 @@
                     markedsføring.</p>
             </div>
 
-<a class="anchor" id="nyheter"></a>
+            <a class="anchor" id="nyheter"></a>
 
             <div class="news">
                 <h3>RELATERTE NYHETER</h3>
                 <div class="news_element">
-                    <a href="#"><img src="img/news1.jpg" alt="News Photo" width="100%"></a>
+                    <a href="#"><img src="img/news1.jpg" alt="News Photo" style=" width:100%;"></a>
                     <a href="#">
                         <h4>Emil (20) gikk rett fra videregående til drømmestudiet</h4>
                     </a>
@@ -396,14 +443,15 @@
                 </div>
 
                 <div class="news_element">
-                    <a href="#"><img src="img/news2.jpg" alt="News Photo" width="100%"></a>
+                    <a href="#"><img src="img/news2.jpg" alt="News Photo" style=" width:100%;"></a>
                     <a href="#">
                         <h4>Geir André (36) jobber som sikkerhetsekspert i Kristiansand. – For meg er det drømmen å
-                            fullføre en bachelorgrad.</p>
+                            fullføre en bachelorgrad.</h4>
+                    </a>
                 </div>
 
                 <div class="news_element">
-                    <a href="#"><img src="img/news3.jpg" alt="News Photo" width="100%"></a>
+                    <a href="#"><img src="img/news3.jpg" alt="News Photo" style=" width:100%;"></a>
                     <a href="#">
                         <h4>Frontend-studentene leverte på linje med designbyråer</h4>
                     </a>
@@ -420,90 +468,99 @@
                     <button onclick="goToOslo()">Oslo</button>
                 </div>
                 <div class="gmap">
-                    <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Noroff%20Oslo&t=&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>
+                    <iframe style=" width:100%; height:300px;" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Noroff%20Oslo&t=&ie=UTF8&iwloc=&output=embed"></iframe>
                 </div>
             </div>
         </div>
-    </div>
 
     </main>
     <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!FOOTER START!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-    <div class="footer">
-      <div class="footer-about">
-          <h3>OM NOROFF</h3>
-          <p>Hos Noroff studerer fremtidens digitale innovatører. Utdanningstilbudet består av høyskole, fagskole og nettstudier. Vi har campus i Oslo, Bergen, Stavanger og Kristiansand. <a href="#">Les mer om oss.</a></p>
-        <ul>
-          <li><a href="#">Personvernerklæring for Noroff</a></li>
-          <li><a href="#">Informasjonskapsler (cookies) på Noroff.no</a></li>
-        </ul>
-      </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-about">
+                <h3>OM NOROFF</h3>
+                <p>Hos Noroff studerer fremtidens digitale innovatører. Utdanningstilbudet består av høyskole, fagskole
+                    og
+                    nettstudier. Vi har campus i Oslo, Bergen, Stavanger og Kristiansand. <a href="#">Les mer om
+                        oss.</a>
+                </p>
+                <ul>
+                    <li><a href="#">Personvernerklæring for Noroff</a></li>
+                    <li><a href="#">Informasjonskapsler (cookies) på Noroff.no</a></li>
+                </ul>
+            </div>
 
-        <div class="border border1"></div>
+            <div class="border border1"></div>
 
-      <div class="footer-studies">
-        <h3>STUDIER</h3>
-        <div class="footer-studies-links">
-        <div class="footer-studies1">
-          <ul>
-            <li><a href="#">Bachelor i Cyber Security</a></li>
-            <li><a href="#">Bachelor i Applied Data Science</a></li>
-            <li><a href="#">Bachelor i Digital Etterforskning</a></li>
-            <li><a href="#">Bachelor i Interaktive Medier - Animasjon</a></li>
-            <li><a href="#">Bachelor i Interaktive Medier - Spill</a></li>
-            <li><a href="#">Frontend-Utvikling</a></li>
-            <li><a href="#">VFX - Visuelle Effekter</a></li>
-            <li><a href="#">Grafisk Design</a></li>
-            <li><a href="#">Lyd- og Musikkproduksjon</a></li>
-          </ul>
-      </div>
-      <div class="footer-studies2">
-        <ul>
-          <li><a href="#">Filmproduksjon</a></li>
-          <li><a href="#">Digital Prototyping</a></li>
-          <li><a href="#">Teknisk Design med DAK2D/3D</a></li>
-          <li><a href="#">Digital Markedsføring</a></li>
-          <li><a href="#">3D Design og Animasjon</a></li>
-          <li><a href="#">3D Spilldesign</a></li>
-          <li><a href="#">3D Filmproduksjon</a></li>
-          <li><a href="#">Nettverk- og IT-Sikkerhet</a></li>
-          <li><a href="#">Nettverks- og Systemadministrasjon</a></li>
-        </ul>
-          </div>
+            <div class="footer-studies">
+                <h3>STUDIER</h3>
+                <div class="footer-studies-links">
+                    <div class="footer-studies1">
+                        <ul>
+                            <li><a href="#">Bachelor i Cyber Security</a></li>
+                            <li><a href="#">Bachelor i Applied Data Science</a></li>
+                            <li><a href="#">Bachelor i Digital Etterforskning</a></li>
+                            <li><a href="#">Bachelor i Interaktive Medier - Animasjon</a></li>
+                            <li><a href="#">Bachelor i Interaktive Medier - Spill</a></li>
+                            <li><a href="#">Frontend-Utvikling</a></li>
+                            <li><a href="#">VFX - Visuelle Effekter</a></li>
+                            <li><a href="#">Grafisk Design</a></li>
+                            <li><a href="#">Lyd- og Musikkproduksjon</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-studies2">
+                        <ul>
+                            <li><a href="#">Filmproduksjon</a></li>
+                            <li><a href="#">Digital Prototyping</a></li>
+                            <li><a href="#">Teknisk Design med DAK2D/3D</a></li>
+                            <li><a href="#">Digital Markedsføring</a></li>
+                            <li><a href="#">3D Design og Animasjon</a></li>
+                            <li><a href="#">3D Spilldesign</a></li>
+                            <li><a href="#">3D Filmproduksjon</a></li>
+                            <li><a href="#">Nettverk- og IT-Sikkerhet</a></li>
+                            <li><a href="#">Nettverks- og Systemadministrasjon</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border border2"></div>
+
+            <div class="footer-contact">
+                <div class="footer-contact-fix">
+                    <h3>KONTAKT OSS</h3>
+                    <ul>
+                        <li>Noroff Education AS</li>
+                        <li>Elvegata 2A</li>
+                        <li>4608 Kristiansand S</li>
+                        <li><i class="fas fa-phone"></i>38 00 00 00</li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:utdanning@noroff.no">utdanning@noroff.no</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border border3"></div>
+
+            <div class="footer-news">
+                <h3>MOTTA NYHETSBREV</h3>
+                <form action="https://hotmail.us20.list-manage.com/subscribe/post" method="POST" id="newsletter-form">
+                    <input type="hidden" name="u" value="65311b6e9b1017cbd9ec75bac">
+                    <input type="hidden" name="id" value="b908d79e81">
+                    <input type="email" pattern="^\S+@\S+\.+\S{2,}$" placeholder="DIN E-POST" name="MERGE0">
+                    <button id="newsletter-btn">SEND INN</button>
+                </form>
+
+                <p>For å kunne sende deg e-post må vi lagre informasjon om deg. Du kan når som helst melde deg av. Les
+                    mer i
+                    vår <a href="#">personvernerklæring.</a></p>
+            </div>
         </div>
-      </div>
-
-        <div class="border border2"></div>
-
-      <div class="footer-contact">
-        <div coass="footer-contact-fix">
-        <h3>KONTAKT OSS</h3>
-          <ul>
-            <li>Noroff Education AS</li>
-            <li>Elvegata 2A</li>
-            <li>4608 Kristiansand S</li> 
-            <li><i class="fas fa-phone"></i>38 00 00 00</li>
-            <li><i class="fas fa-envelope"></i>utdanning@noroff.no</li>
-          </ul>
+        <div class="footer-copy">
+            <p>Copyright <i class="far fa-copyright"></i> Noroff Education AS</p>
         </div>
-      </div>
-
-        <div class="border border3"></div>
-
-      <div class="footer-news">
-        <h3>MOTTA NYHETSBREV</h3>
-        <form action="https://hotmail.us20.list-manage.com/subscribe/post" method="POST" id="newsletter-form" >
-            <input type="hidden" name="u" value="65311b6e9b1017cbd9ec75bac">
-            <input type="hidden" name="id" value="b908d79e81">
-          <input type="email" pattern="^\S+@\S+\.+\S{2,}$" placeholder="DIN E-POST" name="MERGE0">
-          <button id="newsletter-btn" >SEND INN</button>
-        </form>
-
-          <p>For å kunne sende deg e-post må vi lagre informasjon om deg. Du kan når som helst melde deg av. Les mer i vår <a href="#">personvernerklæring.</a></p>
-    </div>
-
-
-    <div class="footer-copy"><p>Copyright <i class="far fa-copyright"></i> Noroff Education AS</p></div>
-</div>
+    </footer>
 
 
     <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!FOOTER END!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
@@ -511,4 +568,5 @@
 
     <script src="scripts/scripts.js"></script>
 </body>
+
 </html>
