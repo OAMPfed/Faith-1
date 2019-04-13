@@ -561,11 +561,12 @@ iframe {
 }
 
 .map-links{
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: left;
 }
 
 .map-links button{
+    margin-top: 10px;
     color: white;
     text-decoration: none;
     font-size: 1em;
